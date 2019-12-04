@@ -198,7 +198,7 @@
 
         //Form validation
 
-        $("submitBtn").on("click", function (event) {
+        $("#submit").on("click", function (event) {
             event.preventDefault();
 
             function validateForm() {
@@ -241,7 +241,7 @@
             .val("");
 
         } else {
-            $("#emptySurvey").modal("toggle");
+            alert("Please fill out survey");
 
         }
             //If all required fields are filed, create an object for user data
